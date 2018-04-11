@@ -75,7 +75,7 @@ def data_print(power_state, brake_state, turn, max_vel, max_steer_angular):
 
 
 if __name__ == "__main__":
-    	settings = termios.tcgetattr(sys.stdin)
+	settings = termios.tcgetattr(sys.stdin)
 
 	pub_manual = rospy.Publisher('cmd_vel_manual', Key_Ctrl_Data_Ht, queue_size=1)
 	rospy.init_node('teleop_twist_keyboard')

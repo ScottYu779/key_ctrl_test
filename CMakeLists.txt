@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.8.3)
 # project(teleop_twist_keyboard)
 get_filename_component(projname ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 string(REPLACE " " "_" projname ${projname})
-project(${projname})
+# project(${projname})
+project(key_ctrl_test)
 
 find_package(catkin REQUIRED)
 
