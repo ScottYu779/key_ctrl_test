@@ -49,20 +49,21 @@ CTRL-C to quit
 moveBindings = {
     'w': (1, 0, 0),
     's': (0, 1, 0),
-    'a': (1, 0,-1),
+    'a': (1, 0, -1),
     'd': (1, 0, 1),
 }
 
 
 speedBindings = {
     'i': (1, 0),
-    'k': (-1,0),
+    'k': (-1, 0),
     'l': (0, 1),
-    'j': (0,-1),
+    'j': (0, -1),
 }
 
+
 def getKey():
-  	tty.setraw(sys.stdin.fileno())
+	tty.setraw(sys.stdin.fileno())
 	select.select([sys.stdin], [], [], 0)
 	key = sys.stdin.read(1)
 	termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
@@ -96,7 +97,6 @@ if __name__ == "__main__":
 				power_state = moveBindings[key][0]
 				brake_state = moveBindings[key][1]
 				turn = moveBindings[key][2]
-
 
 				print data_print(power_state, brake_state, turn,
 				                 max_vel, max_steer_angular)
