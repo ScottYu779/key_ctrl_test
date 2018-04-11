@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>teleop_twist_keyboard</name>
+  <name>key_ctrl_test</name>
   <version>0.6.0</version>
   <description>Generic keyboard teleop for twist robots.</description>
 
