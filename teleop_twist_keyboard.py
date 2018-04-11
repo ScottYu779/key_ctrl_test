@@ -14,12 +14,12 @@
 #History:
 # Version 0.1
 #	Initial protopyte by yuhs
-# 
+#
 
 
 #!/usr/bin/env python
 import roslib
-roslib.load_manifest('teleop_twist_keyboard')
+roslib.load_manifest('key_ctrl_test')
 import rospy
 
 from msgs_ht.msg import Key_Ctrl_Data_Ht
@@ -54,7 +54,7 @@ moveBindings = {
     'i': (0, 0, 0, 1, 0),
     'k': (0, 0, 0, -1, 0),
     'l': (0, 0, 0, 0, 1),
-    'j': (0, 0, 0, 0,-1),
+    'j': (0, 0, 0, 0, -1),
 }
 
 
