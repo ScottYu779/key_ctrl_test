@@ -1,22 +1,27 @@
 # teleop_twist_keyboard
-Generic Keyboard Teleop for ROS.
-added manual override control.
-press d to publish cmd_vel on /cmd_vel_manual and request a service named /serial_bot_node/manual_cmd_srv for manual.
-press a to publish on /cmd_vel.
 
 
-#Launch
-To run: `rosrun teleop_twist_keyboard teleop_twist_keyboard_new.py`
+# usage
+## cmd
+python key_ctrl_test.py
 
-#Usage
+
+## user info
 ```
-Reading from the keyboard  and Publishing to Twist!
+python key_ctrl_test.py
+rosrun key_ctrl_test key_ctrl_test.py
+
 ---------------------------
 Moving around:
 		w 
 a		s		d
-		¡ü
-¡û  stop	¡ú
+		up
+left stop	right
+
+	i
+j	k	l
+i/k:increase/decrease the max_vel
+l/j:increase/decrease the max_steer_angular
 
 
 anything else : stop and brake
@@ -24,3 +29,13 @@ anything else : stop and brake
 esc to quit
 ```
 
+
+# log
+## updatelog
+
+## debug log
+
+
+# info
+## author yuhs
+## copyright
